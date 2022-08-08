@@ -15,7 +15,7 @@ export default function Home({posts}){
       </Head>
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
         <div className='col-span-1 lg:col-span-8'>
-
+          <h1>Brisbane Based Developer, Building on the Web</h1>
         </div>
         <div className='col-span-1 lg:col-span-4'>
           <div className='lg:sticky relative top-8'>
