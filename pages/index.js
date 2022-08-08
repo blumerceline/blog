@@ -8,17 +8,18 @@ import { Key } from 'react';
 
 export default function Home({posts}){
     return (
-    <div className="container mx-auto px-10 mb-8" style={{ backgroundImage:`url(${Image})`,backgroundRepeat:"no-repeat",backgroundSize:"contain", 
-    height:600,width:600
-    }}>
-      <Head>
-        <title>Celine Blumer | Brisbane Based Web Developer</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div className="container mx-auto px-10 mb-8 ">
+      <div className="bg-fixed" style="background-image: url('../public/bg.jpg')">
+        <Head>
+          <title>Celine Blumer | Brisbane Based Web Developer</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        
+        <h1 className='text-lg text-black heading-text'>Web dev is a journey.</h1>
+        <h1 className='text-lg text-black heading-text'>Join me!</h1>
+      </div>
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
         <div className='col-span-1 lg:col-span-8'>
-          <h1 className='text-lg text-black heading-text'>Web dev is a journey.</h1>
-          <h1 className='text-lg text-black heading-text'>Let's go.</h1>
         </div>
         <div className='col-span-1 lg:col-span-4'>
           <div className='lg:sticky relative top-8'>
