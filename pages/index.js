@@ -5,28 +5,22 @@ import Image from 'next/image'
 import {getPosts} from '../services'
 import { Key } from 'react';
 
+const BgImage = dynamic(() => import("../public/bg.jpg"),{
+  ssr: false
+});
 
 export default function Home({posts}){
     return (
     <div className="container mx-auto px-10 mb-8 ">
-      <div className="bg-fixed" style="background-image: url('../public/bg.jpg')">
+      <div className="bg-fixed">
         <Head>
           <title>Celine Blumer | Brisbane Based Web Developer</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
+        <BgImage/>
         
-        <h1 className='text-lg text-black heading-text'>Web dev is a journey.</h1>
-        <h1 className='text-lg text-black heading-text'>Join me!</h1>
-      </div>
-      <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
-        <div className='col-span-1 lg:col-span-8'>
-        </div>
-        <div className='col-span-1 lg:col-span-4'>
-          <div className='lg:sticky relative top-8'>
-            <PostWidget/>
-            <Categories />
-          </div>
-        </div>
+        <h1 className='text-lg text-black heading-text'>Web dev,</h1>
+        <h1 className='text-lg text-black heading-text'>made simple!</h1>
       </div>
     </div>
   )
