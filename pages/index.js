@@ -9,8 +9,10 @@ import img from '../public/bg.jpg';
 
 export default function Home({posts}){
     return (
+    <>
+    <Image src={img} width="100%" height="280"/>
+  
     <div className="container mx-auto px-10 mb-8 ">
-      <Image src={img} width="100%" height="280"/>
       <div className="bg-fixed">
         <Head>
           <title>Celine Blumer | Brisbane Based Web Developer</title>
@@ -21,6 +23,7 @@ export default function Home({posts}){
         <h1 className='text-lg text-black heading-text'>made simple!</h1>
       </div>
     </div>
+    </>
   )
 }
 
