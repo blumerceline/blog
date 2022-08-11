@@ -10,7 +10,7 @@ import img from '../public/bg.jpg';
 export default function Home({posts}){
     return (
     <div className="container mx-auto px-10 mb-8 ">
-      <Image src={img} width="280" height="280"/>
+      <Image src={img} width="100%" height="280"/>
       <div className="bg-fixed">
         <Head>
           <title>Celine Blumer | Brisbane Based Web Developer</title>
