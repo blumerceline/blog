@@ -9,7 +9,7 @@ const BgImage = dynamic(() => import ("../components/BGImage"),{
 });
 
 const Wrapper = styled.div`
-z-index:1;
+z-index:2;
 width:100%;
 height:100%;
 position:fixed;
@@ -21,8 +21,8 @@ export const Layout = ({children}) => {
   return (
     <>
         <Wrapper>
-        <Header />
-        {children}
+          <Header />
+          {children}
         </Wrapper>
         
         <BgImage />
