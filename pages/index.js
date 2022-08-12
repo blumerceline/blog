@@ -3,9 +3,6 @@ import { PostCard, Categories, PostWidget } from '../components';
 import Head from 'next/head'
 import {getPosts} from '../services'
 import { Key } from 'react';
-import {girlOneImg} from '../public/girl.JPG';
-import {dudeImg} from '../public/dude.JPG';
-import {girlTwoImg} from '../public/gal3.JPG';
 import Image from 'next/image';
 
 export default function Home({posts}){
@@ -25,31 +22,31 @@ export default function Home({posts}){
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12">
+      <div className="grid grid-cols-1 lg:grid-cols-12 content-center">
         <div className='col-span-1 lg:col-span-6'>
-        <Image src={girlOneImg} width="250px" height="250px"/>
+        <Image src='/../public/girl.JPG' height="250px" width="250px"/>
         </div>
-        <div className='col-span-1 lg:col-span-6'>
+        <div className='col-span-1 lg:col-span-6 text-black'>
           <h1>Read articles</h1>
           <p>I post about all things web dev, digitalisation and beyond.</p>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className='col-span-1 lg:col-span-6'>
+      <div className="grid grid-cols-1 lg:grid-cols-12" >
+        <div className='col-span-1 lg:col-span-6 text-black'>
           <h1>Follow my progress</h1>
           <p>I write coding logs, to record what I'm currently learning.</p>
         </div>
         <div className='col-span-1 lg:col-span-6'>
-        <Image src={dudeImg} width="250px" height="250px"/>
+        <Image src='/../public/dude.JPG' height="250px" width="250px"/>
         </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className='col-span-1 lg:col-span-6'>
-        <Image src={girlTwoImg} width="250px" height="250px"/>
+        <Image src='/../public/gal3.JPG' height="250px" width="250px"/>
         </div>
-        <div className='col-span-1 lg:col-span-6'>
+        <div className='col-span-1 lg:col-span-6 text-black'>
           <h1>View projects</h1>
           <p>Feel free to have a look at some things I've worked on.</p>
         </div>
