@@ -30,7 +30,7 @@ function BGImage() {
     if(width && height){
         return <Image src={img}
         width={width}
-        height={height}/>
+        height="500px"/>
     }
     return null;
 
