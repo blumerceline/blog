@@ -24,7 +24,7 @@ export default function Home({posts}){
 
       <div className="grid grid-cols-1 lg:grid-cols-12 content-center">
         <div className='col-span-1 lg:col-span-6'>
-        <Image src='/../public/girl.JPG' height="250px" width="250px"/>
+        <Image src='/girl.JPG' height="250px" width="250px"/>
         </div>
         <div className='col-span-1 lg:col-span-6 text-black'>
           <h1>Read articles</h1>
@@ -38,13 +38,13 @@ export default function Home({posts}){
           <p>I write coding logs, to record what I'm currently learning.</p>
         </div>
         <div className='col-span-1 lg:col-span-6'>
-        <Image src='/../public/dude.JPG' height="250px" width="250px"/>
+        <Image src='/dude.JPG' height="250px" width="250px"/>
         </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className='col-span-1 lg:col-span-6'>
-        <Image src='/../public/gal3.JPG' height="250px" width="250px"/>
+        <Image src='/gal3.JPG' height="250px" width="250px"/>
         </div>
         <div className='col-span-1 lg:col-span-6 text-black'>
           <h1>View projects</h1>

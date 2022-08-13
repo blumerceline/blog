@@ -9,7 +9,7 @@ const BgImage = dynamic(() => import ("../components/BGImage"),{
 });
 
 const Wrapper = styled.div`
-z-index:2;
+z-index:1;
 width:100%;
 height:100%;
 position:fixed;
