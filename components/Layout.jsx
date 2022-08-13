@@ -25,7 +25,7 @@ export const Layout = ({children}) => {
           {children}
         </Wrapper>
         
-        <BgImage />
+        <BgImage styled="z-index: -1" />
     </>
   )
 }
